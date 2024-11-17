@@ -1,1 +1,16 @@
-<p>car-list works!</p>
+<div class="car-list">
+  @for (car of cars; track $index) {
+  <div class="car-card">
+    <img [src]="car.carImage" class="car-image" />
+    <div class="car-details">
+      <h2 (click)="navigateToUpdateForm(car)">
+        {{ car.brand }} {{ car.model }}
+      </h2>
+      <p><strong>Year:</strong> {{ car.year }}</p>
+      <p><strong>Color:</strong> {{ car.color }}</p>
+      <p><strong>Daily Rate:</strong> ${{ car.dailyRate }}</p>
+      <p><strong>Registration No:</strong> {{ car.regNo }}</p>
+    </div>
+  </div>
+  }
+</div>
