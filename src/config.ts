@@ -1,1 +1,1 @@
-export const API_URL = 'https://api.example.com/api/CarRentalApp';
+export const API_URL = '/api/CarRentalApp';
